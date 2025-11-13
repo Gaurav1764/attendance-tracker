@@ -40,14 +40,13 @@ try:
 except ValueError:
     print("Invalid number entered.")
 
-print("\n---------- Attendance Summary ----------")
+print("\nAttendance Summary")
 print("Student Name\t\tCheck-in Time")
-print("----------------------------------------")
+
 
 for student, time in attendance.items():
     print(f"{student:20}\t{time}")
 
-print("----------------------------------------")
 print("Total Students Present:", len(attendance))
 
 choice = input("\nDo you want to calculate absentees (yes/no)? ").lower()
@@ -69,13 +68,14 @@ if save == "yes":
         f.write("Attendance Report\n")
         f.write("Generated on: " + datetime.now().strftime("%d-%m-%Y %H:%M:%S") + "\n\n")
         f.write("Student Name\t\tCheck-in Time\n")
-        f.write("----------------------------------------\n")
+
         for student, time in attendance.items():
             f.write(f"{student:20}\t{time}\n")
-        f.write("----------------------------------------\n")
+        
         f.write("Total Present: " + str(len(attendance)) + "\n")
         if 'total' in locals():
             f.write("Total Absent: " + str(absents) + "\n")
     print("Attendance saved to", filename)
 
 print("\nAttendance recording complete. Thank you!\n")
+
