@@ -1,0 +1,18 @@
+Attendance Report
+Generated on: 13-11-2025 17:57:23
+
+Student Name		Check-in Time
+----------------------------------------
+Gaurav              	10:12
+Shail               	10:11
+SK                  	9:45
+Arshit              	5:45
+Aadi                	6:45
+Rahul               	9:50
+Ravi                	6:55
+Neha                	7:15
+Pankaj              	6:40
+Saksham             	3:45
+----------------------------------------
+Total Present: 10
+Total Absent: 5
